@@ -1,0 +1,80 @@
+{
+    "results": [
+      {
+        "title": "Jurassic Park",
+        "year": 1993,
+        "genre": ["Adventure", "Action", "Sci-Fi"],
+        "img": "https://raw.githubusercontent.com/mrspecht/media/main/img/jurassic-park.jpg"
+      },
+      {
+        "title": "Eternals",
+        "year": 2021,
+        "genre": ["Action", "Adventure", "Fantasy"],
+        "img": "https://raw.githubusercontent.com/mrspecht/media/main/img/eternals.jpg"
+      },
+      {
+        "title": "The Matrix",
+        "year": 1999,
+        "genre": ["Action", "Sci-Fi"],
+        "img": "https://raw.githubusercontent.com/mrspecht/media/main/img/the-matrix.jpg"
+      },
+      {
+        "title": "JFK",
+        "year": 1991,
+        "genre": ["Drama", "History", "Thriller"],
+        "img": "https://raw.githubusercontent.com/mrspecht/media/main/img/jfk.jpg"
+      },
+      {
+        "title": "The Lord of the Rings: The Fellowship of the Ring",
+        "year": 2001,
+        "genre": ["Adventure", "Drama", "Fantasy"],
+        "img": "https://raw.githubusercontent.com/mrspecht/media/main/img/the-fellowship-of-the-ring.jpg"
+      },
+      {
+        "title": "No Time to Die",
+        "year": 2021,
+        "genre": ["Action", "Adventure", "Thriller"],
+        "img": "https://raw.githubusercontent.com/mrspecht/media/main/img/no-time-to-die.jpg"
+      },
+      {
+        "title": "The Batman",
+        "year": 2022,
+        "genre": ["Action", "Crime", "Drama"],
+        "img": "https://raw.githubusercontent.com/mrspecht/media/main/img/the-batman.jpg"
+      },
+      {
+        "title": "Rocky",
+        "year": 1976,
+        "genre": ["Drama", "Sport"],
+        "img": "https://raw.githubusercontent.com/mrspecht/media/main/img/rocky.jpg"
+      },
+      {
+        "title": "Titanic",
+        "year": 1999,
+        "runningTime": "3h 14m",
+        "genre": ["Drama", "Romance"],
+        "img": "https://raw.githubusercontent.com/mrspecht/media/main/img/titanic.jpg"
+      },
+      {
+        "title": "Terminator 2: Judgment Day",
+        "year": 1991,
+        "genre": ["Action", "Sci-Fi"],
+        "img": "https://raw.githubusercontent.com/mrspecht/media/main/img/terminator-2-judgment-day.jpg"
+      },
+      {
+        "title": "The Lion King",
+        "year": 1994,
+        "runningTime": "1h 28m",
+        "genre": ["Animation", "Adventure", "Drama"],
+        "img": "https://raw.githubusercontent.com/mrspecht/media/main/img/the-lion-king.jpg"
+      },
+      {
+        "title": "The Godfather",
+        "year": 1973,
+        "runningTime": "2h 55m",
+        "genre": ["Crime", "Drama"],
+        "img": "https://raw.githubusercontent.com/mrspecht/media/main/img/the-godfather.jpg"
+      }
+    ]
+}
+  
