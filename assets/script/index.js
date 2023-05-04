@@ -49,7 +49,6 @@ async function getMovies() {
 
 getMovies();
 
-
 async function getCities() {
   try {
       const response = await fetch(citiesUrl, options); 
@@ -66,18 +65,10 @@ async function getCities() {
 
 getCities();
 
-
 const titleInput = select('.title-input');
 const cityInput = select('.city-input');
 const titleList = select('.match-movies-list');
 const citiesList = select('.match-cities-list');
-const textCityList = document.querySelectorAll('h4');
-
-textCityList.forEach((option) => {
-  option.addEventListener('click', () => {
-    titleInput.value = `${movie.title}`;
-  });
-});
 
 //Search movies
 const searchMovies = async searchText => {
@@ -97,7 +88,6 @@ const searchMovies = async searchText => {
   titleList.style.visibility = 'hidden';
  }
  outputHtml(moviesMatches);
-
 };
 
  //Show movies results in HTML
@@ -109,10 +99,20 @@ const searchMovies = async searchText => {
     `).join('');
 
     titleList.innerHTML = html;
+
+    // Update the value of the input text with the title clicked
+    titleList.querySelectorAll('h4').forEach(item => {
+      item.addEventListener('click', () => {
+        titleInput.value = item.textContent;
+        titleList.style.visibility = 'hidden';
+      });
+    });
+
   } else if(titleInput.value === '') {
     matches = [];
     titleList.innerHTML = '';
     titleList.style.visibility = 'hidden';
+
   } else if(matches.length === 0) {
     titleList.style.visibility = 'visible';
     titleList.innerHTML = `<p>Movie not found</p>`;  
@@ -150,10 +150,20 @@ const searchCity = async searchCity => {
     `).join('');
 
     citiesList.innerHTML = html2;
+
+    // Update the value of the input text with the city clicked
+    citiesList.querySelectorAll('h4').forEach(item => {
+      item.addEventListener('click', () => {
+        cityInput.value = item.textContent;
+        citiesList.style.visibility = 'hidden';
+      });
+    });
+
   } else if(cityInput.value === '') {
     cityMatches = [];
     citiesList.innerHTML = '';
     citiesList.style.visibility = 'hidden';
+
   } else if(cityMatches.length === 0) {
     citiesList.style.visibility = 'visible';
     citiesList.innerHTML = `<p>City not found</p>`;  
@@ -161,5 +171,3 @@ const searchCity = async searchCity => {
 }
 
 cityInput.addEventListener('input', () => searchCity(cityInput.value));
-
-

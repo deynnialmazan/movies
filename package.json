@@ -1,7 +1,7 @@
 {
   "name": "tickets-movies",
   "version": "1.0.0",
-  "description": "Hello...This is my Super Typing Game!",
+  "description": "Website for buying tickets",
   "main": "index.js",
   "scripts": {
     "start": "lite-server"
