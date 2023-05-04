@@ -119,12 +119,18 @@ input[type=text].title-input {
 input[type=text].city-input {
   background: var(--app-medium-gray) url(../image/google-place-optimization-32.png) no-repeat 8px 50%;
   background-size: 17px;
-
   width: 340px;
+  position: relative;
 }
 
 input[type=text] + input[type=text] {
   margin-left: 10px;
+}
+
+.results {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .match-movies-list {
@@ -133,6 +139,7 @@ input[type=text] + input[type=text] {
   width: 700px;
   visibility: hidden;
   position: absolute;
+  z-index: 1;
 }
 
 .match-movies-list h4, .match-cities-list h4 {
@@ -156,7 +163,7 @@ input[type=text] + input[type=text] {
   width: 340px;
   visibility: hidden;
   position: absolute;
-  right: 270px;
+  z-index: 1;
 }
 
 input[type=button] {

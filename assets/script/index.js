@@ -71,6 +71,13 @@ const titleInput = select('.title-input');
 const cityInput = select('.city-input');
 const titleList = select('.match-movies-list');
 const citiesList = select('.match-cities-list');
+const textCityList = document.querySelectorAll('h4');
+
+textCityList.forEach((option) => {
+  option.addEventListener('click', () => {
+    titleInput.value = `${movie.title}`;
+  });
+});
 
 //Search movies
 const searchMovies = async searchText => {
